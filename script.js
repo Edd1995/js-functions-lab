@@ -169,5 +169,9 @@ Challenge yourself with numArgs. This function should return the count of argume
 Complete Exercise 9 in the space below:
 */
 
+const numArgs = (arg) => { 
+    return arg.length;
+}
 
-console.log('Exercise 9 Result:', );
+
+console.log('Exercise 9 Result:', numArgs(['hi', 4, 'what','okay']));
