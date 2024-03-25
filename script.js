@@ -116,7 +116,7 @@ const reverseString = (revString) => {
 
 
 
-console.log('Exercise 6 Result:', reverseString('dsad') );
+console.log('Exercise 6 Result:', reverseString('dssdad') );
 
 /*
 Exercise 7: longestStringInArray
@@ -125,9 +125,19 @@ Define a function called longestStringInArray. It should accept an array of stri
 
 Complete Exercise 7 in the space below:
 */
+let longest = ''
+const longestStringInArray = (array) => { 
+    for (let string of array) { 
+        if (longest.length  < string.length) { 
+            longest = string
+        }
+        
+    }
+    return longest;
+}
 
 
-console.log('Exercise 7 Result:',);
+console.log('Exercise 7 Result:',longestStringInArray(['words','worddsss','morewords']));
 
 /*
 Exercise 8: stringsLongerThan
