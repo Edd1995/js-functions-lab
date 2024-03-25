@@ -146,9 +146,19 @@ Write a function called stringsLongerThan. It takes an array of strings and a nu
 
 Complete Exercise 8 in the space below:
 */
+let newArray = []
+const stringsLongerThan = (num,array) => { 
+    for (let string of array) { 
+        if (num < string.length) { 
+            newArray.push(string)
+        }
+        
+    }
+    return newArray;
+}
 
 
-console.log('Exercise 8 Result:', );
+console.log('Exercise 8 Result:', stringsLongerThan(6,['hello', 'hellooooo', '231312','helloEverybody']) );
 
 // Exercise 9: numArgs
 /*
