@@ -29,16 +29,16 @@ Complete Exercise 2 in the space below:
 
 
 const maxOfThree = (x, y, z) => {
-    if ((x > y) && (x > z)) { 
-        return (console.log('Exercise 2 Result:', x))
+    if ((x > y) && (x > z)) {
+        return (console.log('Exercise 2 Result:', x));
     }
-    else if ((y > x) && (y > z)) { 
-        return (console.log('Exercise 2 Result:', y))
+    else if ((y > x) && (y > z)) {
+        return (console.log('Exercise 2 Result:', y));
     }
-    else return (console.log('Exercise 2 Result:', z))
+    else return (console.log('Exercise 2 Result:', z));
 }
 
-maxOfThree(3,6,7)
+maxOfThree(3, 6, 7);
 
 
 
@@ -72,7 +72,7 @@ Complete Exercise 4 in the space below:
 let sum = 0;
 const sumArray = (array) => { 
     for (let i = 0; array.length > i; i++) { 
-        sum += (array[i])
+        sum += (array[i]);
     }
     return sum;
 }
@@ -94,7 +94,7 @@ Complete Exercise 5 in the space below:
 let value = 1;
 const multiplyArray = (array) => { 
     for (let i = 0; array.length > i; i++) { 
-        value *= (array[i])
+        value *= (array[i]);
     }
     return value;
 }
@@ -109,9 +109,14 @@ Define a function called reverseString. It should take a string and return it wi
 Complete Exercise 6 in the space below:
 */
 
+const reverseString = (revString) => { 
+    return revString.split("").reverse().join(""); // split string to array, reverse array, and join them.
+}
 
 
-console.log('Exercise 6 Result:', );
+
+
+console.log('Exercise 6 Result:', reverseString('dsad') );
 
 /*
 Exercise 7: longestStringInArray
