@@ -69,9 +69,17 @@ Create a function called sumArray. It should take an array of numbers and return
 
 Complete Exercise 4 in the space below:
 */
+let sum = 0;
+const sumArray = (array) => { 
+    for (let i = 0; array.length > i; i++) { 
+        sum += (array[i])
+    }
+    return sum;
+}
 
 
-console.log('Exercise 4 Result:', );
+
+console.log('Exercise 4 Result:', sumArray([3,10,312,31,34,1,63,53]) );
 
 
 
