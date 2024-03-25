@@ -91,9 +91,15 @@ Define a function called multiplyArray. It should take an array of numbers and r
 Complete Exercise 5 in the space below:
 */
 
+let value = 1;
+const multiplyArray = (array) => { 
+    for (let i = 0; array.length > i; i++) { 
+        value *= (array[i])
+    }
+    return value;
+}
 
-
-console.log('Exercise 5 Result:',);
+console.log('Exercise 5 Result:', multiplyArray([31,3,51,6]));
 
 /*
 Exercise 6: reverseString
