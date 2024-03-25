@@ -52,7 +52,15 @@ Complete Exercise 3 in the space below:
 */
 
 
-console.log('Exercise 3 Result:',);
+const isCharAVowel = (char) => {
+    if ('aeiou'.includes(char.toLowerCase()))
+        return true;
+    else return false;
+}
+
+
+
+console.log('Exercise 3 Result:', isCharAVowel('A'));
 
 /*
 Exercise 4: sumArray
