@@ -58,9 +58,23 @@ const isCharAVowel = (char) => {
     else return false;
 }
 
+// OR 
+
+const isCharAVowels = (char) => {
+    char = char.toLowerCase()
+    if ((char === 'a') || (char === 'e') || (char === 'i') || (char === 'o') || (char === 'u')) {
+        return true;
+    }
+    else return false;
+}
+
+    
+
 
 
 console.log('Exercise 3 Result:', isCharAVowel('A'));
+console.log('Exercise 3 Result:', isCharAVowels('I')); // Second way
+
 
 /*
 Exercise 4: sumArray
@@ -150,7 +164,7 @@ let newArray = []
 const stringsLongerThan = (num,array) => { 
     for (let string of array) { 
         if (num < string.length) { 
-            newArray.push(string)
+            newArray.push(string);
         }
         
     }
